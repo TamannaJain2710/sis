@@ -4,25 +4,101 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Sanskriti International School</title>
     <link href="image/Sanskiriti School.png" rel="icon" type="image/x-icon"> 
-        
+    
+    <style>
+      .container {
+        position: relative;
+       /* width: 50%;*/
+      }
+      
+      .image {
+        display: block;
+        width: 100%;
+        height: auto;
+      }
+      
+      .overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-color: black;
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+      }
+      
+      .container:hover .overlay {
+        height: 100%;
+      }
+      
+      .text {
+        /*white-space: nowrap; */
+        color: white;
+        font-size: 15;
+        position: absolute;
+        overflow: hidden;
+        top: 50%;
+        left: 50%;
+        text-transform: uppercase;
+        transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+      }
+
+      .btn{
+        width: 30%;
+        padding: 1.5%;
+        color: #fff;
+        background-color: #014fc4;
+        border: none;
+        cursor: pointer;
+        margin-right: 6%;
+        color: rgb(246, 246, 252);
+        margin-top: 4%;
+        margin-left: 35%;
+      }
+      </style>
     </head>
     <body>
       <link href="css/style.css" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
       <link href="css/gallery.css"rel="stylesheet" type="text/css">
       <header>
       <div class = "logo">
         <img src="image/logo-1.png" width="50%" height="50%">
       </div>
             <nav>
+              <input type="checkbox" id="check">
+              <label for="check" class="checkbtn" >
+              <i class="fas fa-bars"></i>
+            </label>
               <ul>
-            <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="aboutUs.html">About Us</a></li>
+            <li>
+              <a href="index.html" class="active">Home</a></li>
+            <li>
+              <a href="#">About Us</a>
+            <ul>
+              <li><a href="aboutUs.html">Our Information</a></li>
+              <li><a href="messages.html">messages</a></li>
+              <li><a href="a2.html">Our INFRASTRUCTURE and facilities</a></li>
+            </ul>
+            </li>
             <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="syllabus.html">Syllabus</a></li>
             <li><a href="contact.html">Contact Us</a></li>
-            <li><a href="admisssion.html">Admission</a></li>
+            <li class="drop-down"><a href="#">Admission</a>
+            <ul>
+              <li><a href="admisssion.html">procedure</a></li>
+              <li><a href="apply.html">Apply Online</a></li>
+            </ul>
+          </li>
           </ul>
         </nav>
       </header>
+      <div class="note">
+        <marquee behavior="scroll" direction="left">Admission Open for session 2021-2022. enrol now</marquee>
+      </div>
        <div class="content">
           <link href="css/slideshow.css">
           <div class="slideshow-container">
@@ -54,81 +130,161 @@
             <div class="mySlides fade">
               <img src="slideshow/bg9.jpg" style="width:100%">
             </div>
+            
             </div>
             <br>
-            <div class="row">
-              <div class="column" style="background-color: black;color: white; width: 33.3%;">
-                <h2>Expert Teachers</h2>
-                <br>
-                <img src="image/ET (2).png" width="15%" height="5%">
-              <p>We the SIS to the words of William Arthur “The mediocre teacher tell, the good teacher explains, the superior teachers”</p>
-            </div>
-              <div class="column"style="background-color: black;color: white; width: 33.3%;">
-                <h2>Smart Classes</h2>
-                <br>
-                <img src="image/SC.png" width="15%" height="5%">
-                <p> Sanskriti International School takes pride in implementing the latest and advanced technology in its classrooms.</p>
+              <div style="text-align:center">
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
+                <span class="dot"></span> 
               </div>
-              <div class="column"style="background-color: black;color: white; width: 33.3%;">
-               <h2> Art & Craft</h2>
-               <br>
-                <img src="image/AC.png" width="15%" height="5%">
-                <p>The name says it all. It contains many different types of art and craft activities. </p>
+              <br>
+            <div class="row">
+              <div class="column" style="background-color: black;color: white;">
+                <div class="container">
+                  Expert Teachers
+                  <img src="image/ET (2).png" alt="Avatar" class="image" >
+                  <div class="overlay">
+                    <div class="text">We the SIS to the words of William Arthur “The mediocre teacher tell, the good teacher explains, the superior teachers”
+                     </div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="background-color: black;color: white;">
+                <div class="container">
+                  Art & Craft
+                  <img src="image/AC.png" alt="Avatar" class="image" >
+                  <div class="overlay">
+                    <div class="text">The name says it all. It contains many different types of art and craft activities.</div>
+                  </div>
+                </div>
+              </div>
+              <div class="column" style="background-color: black;color: white;">
+                <div class="container">
+                  Smart Classes
+                  <img src="image/SC.png" alt="Avatar" class="image" >
+                  <div class="overlay">
+                    <div class="text">Sanskriti International School takes pride in implementing the latest and advanced technology in its classrooms.</div>
+                  </div>
+                </div>
               </div>
             </div>
             <br>
-            <div class="row">
-              <div class="column" style="width: 50%;">
-                <img src="image/about us.jpg">
-                <br>
-                <h3>About Us</h3>
-                <p style="color: green;">Sanskriti International School , as the name speaks for itself lays the foundation for a child’s bright future. the foundation of a structure decides its fate and its future. similarly a child’s early education plays a pivotal role in moulding him and shaping a bright and successful future for him..</p>
-              </div>
-              <div class="column" style="width: 50%;">
-                <img src="image/notice bord.jpg">
-                <br>
-                <h3>Notice Board</h3>
-              </div>
+            <h1 style="text-align: center; padding: 5%; background-color: rgb(248, 248, 29);">Parent Reviews</h1>
+            <br>
+            <div class="slideshow-container">
+
+            <div class="mySlides2 fade">
+              <img src="image/s2bg1.jpg" style="width:100%">
             </div>
-            <div style="padding: 2%; color:black; text-align: center; font-weight: bold; font-size: 30; top: 100px;">
-              
-              <video  width="100%" height="100%" autoplay replay>
-                <source src="image/banner.mp4" >
-              </video>
+            
+            <div class="mySlides2 fade">
+              <img src="image/s2bg2.jpg" style="width:100%">
             </div>
-            <div class="row">
-              <div class="column" style = "background-color: rgb(252, 55, 170);color: white; width:25%;">
-                <img src="image/experience.png">
-                <br>
-                Years of Experience
-              </div>
-              <div class="column" style = "background-color: rgb(252, 55, 170);color: white; width:25%">
-                <img src="image/pro teachers.png">
-                <br>
-                Professional Teachers
-              </div>
-              <div class="column" style = "background-color: rgb(252, 55, 170);color: white; width:25%">
-                <img src="image/happy kids.png">
-                <br>
-                Happy Kids
-              </div>
-              <div class="column" style = "background-color: rgb(252, 55, 170);color: white; width:25%">
-                <img src="image/awesome classes.png">
-                <br>
-                Awesome Classes
-              </div>
+            
+            <div class="mySlides2 fade">
+              <img src="image/s2bg3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2 fade">
+              <img src="image/s2bg4.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2 fade">
+              <img src="image/s2bg5.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides2 fade">
+              <img src="image/s2bg6.jpg" style="width:100%">
+            </div>
+            
+            </div>
+           <br>
+           <button class="btn">Leave a review</button>
+           <br>
+           <br>
+           <h1 style="text-align: center; padding: 5%; background:linear-gradient(rgb(92, 162, 255), white, pink,rgb(253, 112, 253));">Art and craft column</h1>
+           <br>
+           <div class="imgrow">
+             <div class="imgcolumn">
+               <img src="image/c1.jpeg" style="width:100%">
+               <img src="image/c9.jpg" style="width:100%"> 
+               <img src="image/c6.jpg" style="width:100%">   
+             </div>
+             <div class="imgcolumn">
+              <img src="image/c3.jpeg" style="width:100%">
+              <img src="image/c10.jpg" style="width:100%"> 
+              <img src="image/c8.jpg" style="width:100%">
+             </div>
+             <div class="imgcolumn">
+              <img src="image/c5.jpg" style="width:100%">
+              <img src="image/c11.jpg" style="width:100%">
+              <img src="image/c2.jpeg" style="width:100%"> 
+             </div>
+            <div class="imgcolumn">
+              <img src="image/c7.jpg" style="width:100%">
+              <img src="image/c12.jpg" style="width:100%">
+              <img src="image/c4.jpeg" style="width:100%"> 
+            </div>
             </div>
           </div>
         
       
-        <footer id="footer">
-          
-          <a href="https://www.instagram.com/sanskriti_international_school/"><img src="insta logo.png" width="4%" height="20%"></a>
-          <a href="https://www.facebook.com/sanskritiintschool"><img src="Facebook-logo.png" width="4%" height="20%"></a>
-          <a href="https://www.youtube.com/channel/UCAr0k0_UIM8P5mLN1qeH2EQ"><img src="yt.png" width="7%" height="7.5%"></a>
-
-        </footer>
-        <script src="slideshow.js"></script>
-        
+          <footer id="footer">
+            <div class="row" style="text-transform: uppercase;">
+              <div class="column">
+                <h2>About our School</h2>
+                <br>
+                <p>Sanskriti International School , as the name speaks for itself lays the foundation for a child’s bright future. the foundation of a structure decides its fate and its future. similarly a child’s early education plays a pivotal role in moulding him and shaping a bright and successful future for him..</p>
+              </div>
+              <div class="column">
+                <h2>Quick Link</h2>
+                <br>
+                <a href="index.html" style=" text-decoration:none;color: white;">Home</a>
+                <br>
+                <a href="aboutUs.html"style="text-decoration:none; color: white;">About Us</a>
+                <br>
+                <a href="messages.html"style="text-decoration:none; color: white;">messages</a>
+                <br>
+                <a href="a2.html"style="text-decoration:none; color: white;">Our INFRASTRUCTURE and facilities</a>
+                <br>
+                <a href="gallery.html"style="text-decoration:none; color: white;">Gallery</a>
+                <br>
+                <a href="syllabus.html"style="text-decoration:none; color: white;">Syllabus</a>
+                <br>
+                <a href="contact.html"style="text-decoration:none; color: white;">Contact Us</a>
+                <br>
+                <a href="admisssion.html"style="text-decoration:none; color: white;">Admission procedure</a>
+                <br>
+                <a href="apply.html"style="text-decoration:none; color: white;">Apply Online</a>
+              </div>
+              <div class="column">
+              <h2>contact us</h2>
+              <br>
+              <a href="https://www.google.com/maps/dir/28.6948985,77.366896/sanskriti+international+school+vasundhara/@28.6786998,77.3543999,14z/data=!3m1!4b1!4m9!4m8!1m1!4e1!1m5!1m1!1s0x390cf12d99304017:0xafe04b5b50213ea9!2m2!1d77.3818354!2d28.6686725" style=" text-decoration:none;color: white;"> Sanskriti International School,<br> Sector 4A, Vasundhara, <br> Ghaziabad, Uttar Pradesh 201012</a> </li>
+              <p>
+                <br>
+              <a href="tel:9711499911"style=" text-decoration:none;color: white;">+91-9711499911</a> |
+              <a href="tel:0120-4274198"style=" text-decoration:none;color: white;"> 0120-4274198</a>
+            </p>
+              <p>
+            <br>
+            <a href="mailto:info@sanskritiinternationalschool.com" class="fonty" style=" text-decoration:none;color: white;font-size: small;">info@sanskritiinternationalschool.com</a> 
+            <br>
+            <a href="mailto:admission@sanskritiinternationalschool.com" class="fonty"  style=" text-decoration:none;color: white;font-size: small;">admission@sanskritiinternationalschool.com</a>
+            </p>
+              </div>
+            </div>
+            <p style="background-color: orange;" >
+            <a href="https://www.instagram.com/sanskriti_international_school/"><img src="image/insta logo.png"></a>
+            <a href="https://www.facebook.com/sanskritiintschool"><img src="image/Facebook-logo.png"></a>
+            <a href="https://www.youtube.com/channel/UCAr0k0_UIM8P5mLN1qeH2EQ"><img src="image/yt.png"></a>
+              <br>
+              COPYRIGHTS SANSKRITI INTERNATIONAL SCHOOL. ALL RIGHTS RESERVED.
+          </p>
+          </footer>
+          <script src="slideshow.js"></script>
+          <script src="slideshow2.js"></script>
     </body>
 </html>
