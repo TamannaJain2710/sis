@@ -28,6 +28,7 @@
       padding: 0;
       display: flex;
       flex-wrap: wrap;
+      z-index: 2;
   }
   nav ul li{
       width: 16%;
@@ -36,6 +37,7 @@
   nav ul li > ul{
     display: none;
     flex-direction: column;
+    z-index: 2;
 }
 
   
@@ -87,6 +89,7 @@
       display: none;
     }
   .content{
+    z-index: 1;
     padding:5%;
     font-size:18px;
     line-height:1.5;
