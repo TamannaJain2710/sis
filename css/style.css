@@ -43,6 +43,7 @@
   
   nav ul li > ul li{
       width: 100%;
+      z-index: 2;
   }
   
   nav ul li:hover > ul{
@@ -261,6 +262,11 @@
     margin-top: 8px;
     vertical-align: middle;
     width: 100%;
+  }
+
+  marquee{
+    position: absolute;
+    z-index: 1;
   }
   
   /* Responsive layout - makes a two column-layout instead of four columns */

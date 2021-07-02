@@ -13,7 +13,7 @@
         form{
           margin-right: 10%;
           margin-left: 10%;
-            
+          background: linear-gradient(rgb(137, 137, 255),rgb(71, 71, 255),blue);  
         }
         .form-content{
             border: black 2px groove;
@@ -65,13 +65,17 @@
       <div class="content">
         <form method="post" autocomplete="off" name="google-sheet">
             <div class="form-content">
-            Name:
+            Ward's Name:
             <br>
-            <input type="text" name="name" value="ward's name"required="">
+            <input type="text" name="wardname" value="ward's name"required="">
+            <br>
+            Your Name:
+            <br>
+            <input type="text" name="name" value="your name"required="">
             <br>
             Relation with the child:
             <br>
-            <input type="text" name="name" value="eg: Mother/Father" required="">
+            <input type="text" name="relation" value="eg: Mother/Father" required="">
             <br>
             Email:
             <br>
@@ -140,7 +144,7 @@
       </footer>
 </body>
 <script>
-  const scriptURL = 'https://script.google.com/macros/s/AKfycbxP17jcY8w2MnwuTkWmnqLAfj_24sYn06t3UlxLHabOSqV6tdq5_DAAvBAibqfbZ0iD/exec'
+  const scriptURL = 'https://script.google.com/macros/s/AKfycbwfSNLlirfHqxlKROZS10A4J1My11Kjhef-WdvB0N7PCq5zSB3Xt8mL-JKyJqNSJ1JHYg/exec'
   const form = document.forms['google-sheet']
   //function onClick{(alert("Please wait while Saving Data..."))}
   form.addEventListener('submit', e => {
